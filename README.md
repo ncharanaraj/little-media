@@ -1,6 +1,6 @@
 # 🎞️ Little Media [[↗️]()]
 
-
+Developed a web app for movies and TV shows using React JS and Material UI. The app is fully responsive and will work on all devices. The information for the movies and TV shows will come from a database called MovieDB API.
 
 ### 🪶 Features
 
@@ -10,6 +10,9 @@
 
 - Visual Studio Code
 - React Js
+- Material UI and Icons
+- Axios
+- React Router DOM
 
 
 ### 🌐 Deployed Status
