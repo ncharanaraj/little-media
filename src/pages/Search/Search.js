@@ -1,6 +1,6 @@
 
 const Search = () => {
-  return <span className="page-title">Trending</span>;
+  return <span className="page-title">Search</span>;
 };
 
 export default Search;
