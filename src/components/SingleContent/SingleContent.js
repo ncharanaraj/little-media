@@ -3,7 +3,6 @@ import { img_300, unavailable } from "../../config/Config";
 import "./SingleContent.css";
 
 const SingleContent = ({
-  id,
   poster,
   title,
   date,

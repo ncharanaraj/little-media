@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import Genres from "../../components/Genres";
 import CustomPagination from "../../components/Pagination/CustomPagination";
 import SingleContent from "../../components/SingleContent/SingleContent";
 
@@ -7,6 +8,8 @@ const Movies = () => {
   const [page, setPage] = useState(1);
   const [content, setContent] = useState([]);
   const [noOfPages, setNoOfPages] = useState();
+  const [genres, setGenres] = useState([])
+  const [selectedGenres, setSelectedGenres] = useState([]);
 
   const fetchMovies = async () => {
     const { data } = await axios.get(
@@ -25,6 +28,14 @@ const Movies = () => {
   return (
     <div>
       <span className="pageTitle">Movies</span>
+      <Genres
+        type="movie"
+        selectedGenres={selectedGenres}
+        setSelectedGenres={selectedGenres}
+        genres={genres}
+        setGenres={setGenres}
+        setPage={setPage}
+      />
       <div className="trending">
         {content &&
           content.map((c) => (
@@ -34,7 +45,7 @@ const Movies = () => {
               poster={c.poster_path}
               title={c.name || c.title}
               date={c.first_air_date || c.release_date}
-              media_type={c.media_type}
+              media_type="movie"
               vote_average={c.vote_average}
             />
           ))}
