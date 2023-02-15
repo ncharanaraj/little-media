@@ -1,7 +1,7 @@
 
 const Series = () => {
   return (
-    <span className='page-title'>TV Series</span>
+    <span className='pageTitle'>TV Series</span>
   )
 }
 

@@ -23,6 +23,7 @@ const Movies = () => {
 
   useEffect(() => {
     fetchMovies();
+    // eslint-disable-next-line
   }, []);
 
   return (
@@ -31,7 +32,7 @@ const Movies = () => {
       <Genres
         type="movie"
         selectedGenres={selectedGenres}
-        setSelectedGenres={selectedGenres}
+        setSelectedGenres={setSelectedGenres}
         genres={genres}
         setGenres={setGenres}
         setPage={setPage}

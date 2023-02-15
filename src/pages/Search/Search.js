@@ -1,6 +1,6 @@
 
 const Search = () => {
-  return <span className="page-title">Search</span>;
+  return <span className="pageTitle">Search</span>;
 };
 
 export default Search;
