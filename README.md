@@ -17,7 +17,7 @@ Developed a web app for movies and TV shows using React JS and Material UI. The 
 
 
 ### 🌐 Deployed Status
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/aa5d4189-8c98-4ea9-9bb3-7d64038311b6/deploy-status)](https://app.netlify.com/sites/spectacular-toffee-6d8141/deploys)
 
 ## 🧑‍💻 How to install and run locally ?
 
