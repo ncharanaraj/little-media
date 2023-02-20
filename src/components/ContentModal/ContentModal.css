@@ -58,6 +58,7 @@
     scrollbar-width: thin; /* Firefox */
     box-shadow: inset 0 0 2px #000000;
     text-align: justify;
+    margin-bottom: 5px;
   }
 
   .ContentModal__description::-webkit-scrollbar {

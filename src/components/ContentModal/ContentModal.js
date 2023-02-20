@@ -13,6 +13,7 @@ import {
   unavailableLandscape,
 } from "../../config/Config";
 import YouTubeIcon from "@mui/icons-material/YouTube";
+import Carousel from "../Carousel/Carousel"
 import './ContentModal.css'
 
 const style = {
@@ -120,7 +121,7 @@ export default function ContentModal({ children, media_type, id }) {
                     </span>
 
                     <div>
-                      {/* <Carousel id={id} media_type={media_type} /> */}
+                      <Carousel id={id} media_type={media_type} />
                     </div>
 
                     <Button
