@@ -34,9 +34,9 @@ const Genres = ({
   useEffect(() => {
     fetchGenres();
 
-    //   return () => {
-    //     setGenres({}); // unmounting
-    //   };
+      // return () => {
+      //   setGenres({}); // unmounting
+      // };
     // eslint-disable-next-line
   }, []);
 

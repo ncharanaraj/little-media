@@ -13,6 +13,7 @@ Developed a web app for movies and TV shows using React JS and Material UI. The 
 - Material UI and Icons
 - Axios
 - React Router DOM
+- React-alice-carousel
 
 
 ### 🌐 Deployed Status

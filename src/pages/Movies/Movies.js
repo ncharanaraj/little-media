@@ -3,28 +3,30 @@ import React, { useEffect, useState } from "react";
 import Genres from "../../components/Genres";
 import CustomPagination from "../../components/Pagination/CustomPagination";
 import SingleContent from "../../components/SingleContent/SingleContent";
+import useGenre from "../../Hooks/useGenre";
 
 const Movies = () => {
   const [page, setPage] = useState(1);
   const [content, setContent] = useState([]);
   const [noOfPages, setNoOfPages] = useState();
-  const [genres, setGenres] = useState([])
+  const [genres, setGenres] = useState([]);
   const [selectedGenres, setSelectedGenres] = useState([]);
+  const genreforURL = useGenre(selectedGenres);
 
   const fetchMovies = async () => {
     const { data } = await axios.get(
-      ` https://api.themoviedb.org/3/discover/movie?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=${page}`
+      ` https://api.themoviedb.org/3/discover/movie?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=${page}&with_genres=${genreforURL}`
     );
 
-    console.log(data);
     setContent(data.results);
     setNoOfPages(data.total_pages);
   };
 
   useEffect(() => {
+    window.scroll(0, 0);
     fetchMovies();
     // eslint-disable-next-line
-  }, []);
+  }, [genreforURL, page]);
 
   return (
     <div>
@@ -52,7 +54,7 @@ const Movies = () => {
           ))}
       </div>
       {noOfPages > 1 && (
-        <CustomPagination setPage={setPage} noOfPages={noOfPages} />
+        <CustomPagination setPage={setPage} numOfPages={noOfPages} />
       )}
     </div>
   );
