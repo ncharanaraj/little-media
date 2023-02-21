@@ -4,8 +4,8 @@
 - Integrated the MovieDB API database to provide real-time updates on the latest movies and TV shows available.
 
 ### 🪶 Features
-
-
+- trending content, movie and TV show listings, a search function, single content cards, genre categorization, a carousel for easy
+browsing, modal content displays, and pagination for seamless navigation.
 
 ### 💻 Developed with
 
