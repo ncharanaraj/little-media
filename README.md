@@ -1,4 +1,4 @@
-# 🎞️ Little Media [[↗️]()]
+# 🎞️ Little Media [[↗️](https://littlemedia.netlify.app/)]
 
 - Developed a responsive web application to display information on movies and TV shows utilizing React JS and Material UI.
 - Integrated the MovieDB API database to provide real-time updates on the latest movies and TV shows available.
